@@ -1,0 +1,48 @@
+{
+    "name": "Examen",
+    "fields": [
+        {
+            "fieldName": "nomexamen",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateExamen",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "session",
+            "otherEntityRelationshipName": "examen",
+            "relationshipName": "session"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "tour",
+            "otherEntityRelationshipName": "examen",
+            "relationshipName": "tour"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "jury",
+            "otherEntityRelationshipName": "examen",
+            "relationshipName": "jury",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200407120800",
+    "entityTableName": "examen",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": [
+        "jhipster"
+    ]
+}

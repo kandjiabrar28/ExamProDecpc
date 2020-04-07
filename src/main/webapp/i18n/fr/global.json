@@ -1,12 +1,30 @@
 {
   "global": {
-    "title": "ExamPro",
+    "title": "Jhipster",
     "browsehappy": "Vous utilisez un <strong>ancien</strong> navigateur. Veuillez <a href=\"http://browsehappy.com/?locale=fr\">mettre à jour votre navigateur</a> pour une meilleure expérience.",
     "menu": {
       "home": "Accueil",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entités",
+        "salle": "Salle",
+        "surveillant": "Surveillant",
+        "pvSurveillance": "PV Surveillance",
+        "examen": "Examen",
+        "tour": "Tour",
+        "anonymat": "Anonymat",
+        "specialite": "Specialite",
+        "session": "Session",
+        "niveau": "Niveau",
+        "filiere": "Filiere",
+        "jury": "Jury",
+        "centre": "Centre",
+        "candidat": "Candidat",
+        "tables": "Tables",
+        "matiere": "Matiere",
+        "correcteur": "Correcteur",
+        "note": "Note",
+        "plageCopie": "Plage Copie",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

@@ -1,0 +1,47 @@
+{
+    "name": "Salle",
+    "fields": [
+        {
+            "fieldName": "numsalle",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "nomsalle",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "tables",
+            "otherEntityRelationshipName": "salle",
+            "relationshipName": "tables"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "pVSurveillance",
+            "otherEntityRelationshipName": "salle",
+            "relationshipName": "pvsurveillance"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "centre",
+            "otherEntityRelationshipName": "salle",
+            "relationshipName": "centre",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200407120500",
+    "entityTableName": "salle",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": [
+        "jhipster"
+    ]
+}

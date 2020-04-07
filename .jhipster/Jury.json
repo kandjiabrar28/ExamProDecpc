@@ -1,0 +1,32 @@
+{
+    "name": "Jury",
+    "fields": [
+        {
+            "fieldName": "numjury",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "examen",
+            "otherEntityRelationshipName": "jury",
+            "relationshipName": "examen",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200407121500",
+    "entityTableName": "jury",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": [
+        "jhipster"
+    ]
+}
