@@ -1,0 +1,44 @@
+{
+    "name": "Tour",
+    "fields": [
+        {
+            "fieldName": "numtour",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "anonymat",
+            "otherEntityRelationshipName": "tour",
+            "relationshipName": "anonymat"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "matiere",
+            "otherEntityRelationshipName": "tour",
+            "relationshipName": "matiere",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "examen",
+            "otherEntityRelationshipName": "tour",
+            "relationshipName": "examen",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200407115700",
+    "entityTableName": "tour",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": [
+        "jhipster"
+    ]
+}
