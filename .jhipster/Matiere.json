@@ -1,0 +1,52 @@
+{
+    "name": "Matiere",
+    "fields": [
+        {
+            "fieldName": "libmatiere",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "noteelimin",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "coefficient",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "note",
+            "otherEntityRelationshipName": "matiere",
+            "relationshipName": "note"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "tour",
+            "otherEntityRelationshipName": "matiere",
+            "relationshipName": "tour"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "correcteur",
+            "otherEntityRelationshipName": "matiere",
+            "relationshipName": "correcteur",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200407121900",
+    "entityTableName": "matiere",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": [
+        "jhipster"
+    ]
+}

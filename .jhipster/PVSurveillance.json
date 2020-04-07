@@ -1,0 +1,50 @@
+{
+    "name": "PVSurveillance",
+    "fields": [
+        {
+            "fieldName": "epreuve",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "heureDeb",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "heureFin",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "datesurv",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "salle",
+            "otherEntityRelationshipName": "pvsurveillance",
+            "relationshipName": "salle",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "surveillant",
+            "otherEntityRelationshipName": "pvsurveillance",
+            "relationshipName": "surveillant",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200407120700",
+    "entityTableName": "pv_surveillance",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": [
+        "jhipster"
+    ]
+}

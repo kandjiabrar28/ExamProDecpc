@@ -1,0 +1,54 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="pVSurveillance">
+            <h2><span jhiTranslate="jhipsterApp.pVSurveillance.detail.title">PV Surveillance</span> {{ pVSurveillance.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jhipsterApp.pVSurveillance.epreuve">Epreuve</span></dt>
+                <dd>
+                    <span>{{ pVSurveillance.epreuve }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.pVSurveillance.heureDeb">Heure Deb</span></dt>
+                <dd>
+                    <span>{{ pVSurveillance.heureDeb }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.pVSurveillance.heureFin">Heure Fin</span></dt>
+                <dd>
+                    <span>{{ pVSurveillance.heureFin }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.pVSurveillance.datesurv">Datesurv</span></dt>
+                <dd>
+                    <span>{{ pVSurveillance.datesurv }}</span>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.pVSurveillance.salle">Salle</span></dt>
+                <dd>
+                    <div *ngIf="pVSurveillance.salle">
+                        <a [routerLink]="['/salle', pVSurveillance.salle?.id, 'view']">{{ pVSurveillance.salle?.id }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="jhipsterApp.pVSurveillance.surveillant">Surveillant</span></dt>
+                <dd>
+                    <div *ngIf="pVSurveillance.surveillant">
+                        <a [routerLink]="['/surveillant', pVSurveillance.surveillant?.id, 'view']">{{ pVSurveillance.surveillant?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/pv-surveillance', pVSurveillance.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
